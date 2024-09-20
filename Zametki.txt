@@ -33,7 +33,9 @@ git branch ##Показывает на какой я ветке сейчас
 git push -u origin first_branch ##устанавливаете связь между той веткой, в которой вы находитесь и веткой main на удалённом сервере
 git chekout - ##Переход на ветку main
 git merge first_branch ##позволяет объединить изменения из одной ветки в другую
-git branch -m
-git push origin^ second_name
-git branch -d
-git fetch origin second_branch
+git branch -m ##переименовывает текущую ветку, даже если имя у текущей ветки существует.
+git push origin: second_name ##это команда, которая отправляет локальные ветви в удалённый репозиторий 
+git branch -d ##Удаление ветки после merge: git branch -d.- Удаление любой ветки: git branch -D.
+git fetch origin second_branch ## копия удалённого репозитория (расположенная по адресу «origin») загружается и сохраняется на локальную машину. При этом локальная копия кода ещё не была изменена. Это связано с тем, что команда git fetch не выполняет операцию слияния с кодом
+git gui& ##Запуск git gui
+gitk& ##Запуск gitk
